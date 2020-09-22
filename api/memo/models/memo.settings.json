@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "memos",
+  "info": {
+    "name": "memo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "content": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "mymemo-2",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "client": "npm start --prefix frontend",
+    "strapi": "strapi",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "strapi": "3.1.5",
+    "strapi-admin": "3.1.5",
+    "strapi-utils": "3.1.5",
+    "strapi-plugin-content-type-builder": "3.1.5",
+    "strapi-plugin-content-manager": "3.1.5",
+    "strapi-plugin-users-permissions": "3.1.5",
+    "strapi-plugin-email": "3.1.5",
+    "strapi-plugin-upload": "3.1.5",
+    "strapi-connector-mongoose": "3.1.5"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "177cf4b9-cee8-42fb-a2d5-f0aaefda35cd"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
