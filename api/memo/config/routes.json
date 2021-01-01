@@ -2,6 +2,15 @@
   "routes": [
     {
       "method": "GET",
+      "path": "/memos/signature",
+      "handler": "memo.signature",
+      "config": {
+        "policies": []
+      }
+    },
+
+    {
+      "method": "GET",
       "path": "/memos",
       "handler": "memo.find",
       "config": {
