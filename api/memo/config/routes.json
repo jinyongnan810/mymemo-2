@@ -2,8 +2,8 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/memos/signature",
-      "handler": "memo.signature",
+      "path": "/api/signature",
+      "handler": "upload.signature",
       "config": {
         "policies": []
       }
