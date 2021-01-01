@@ -5,7 +5,11 @@ require("dotenv").config();
  * Read the documentation (https://strapi.io/documentation/v3.x/concepts/controllers.html#core-controllers)
  * to customize this controller
  */
-
+cloudinary.config({
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.API_KEY,
+  api_secret: process.env.API_SECRET,
+});
 module.exports = {
   async upload(ctx) {
     // sign and try cloud upload. didn't work
