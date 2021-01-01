@@ -12,8 +12,7 @@ module.exports = {
     var signature = cloudinary.utils.api_sign_request(
       {
         timestamp: timestamp,
-        eager: "w_400,h_300,c_pad|w_260,h_200,c_crop",
-        public_id: "kinspage",
+        upload_preset: "ml_default",
       },
       process.env.API_SECRET
     );
