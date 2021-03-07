@@ -1,3 +1,4 @@
+require("dotenv").config();
 module.exports = ({ env }) => ({
   defaultConnection: "default",
   connections: {
@@ -9,7 +10,7 @@ module.exports = ({ env }) => ({
         port: env.int("DATABASE_PORT", 27017),
         database: env("DATABASE_NAME", "mymemo-2"),
         username: env("DATABASE_USERNAME", "jinyongnan"),
-        password: env("DATABASE_PASSWORD", "QSgeiKvxBISzkQxW"),
+        password: process.env.DB_SECRET,
       },
       options: {
         authenticationDatabase: env("AUTHENTICATION_DATABASE", "admin"),
